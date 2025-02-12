@@ -25,7 +25,14 @@ export default function Hero() {
                         placeholder="Enter your email"
                         className="bg-transparent px-4"
                     />
-                    <Button type="submit" variant="primary" className="whitespace-nowrap">Sign Up</Button>
+                    <Button
+                        type="submit"
+                        variant="primary"
+                        className="whitespace-nowrap"
+                        size="sm"
+                    >
+                        Sign Up
+                    </Button>
                 </form>
             </div>
         </section>
