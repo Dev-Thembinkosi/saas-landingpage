@@ -3,8 +3,7 @@ export default function FeatureCard(props: {
     description: string;
     children?: React.ReactNode;
 }) {
-
-    const {title, description, children} = props;
+    const { title, description, children } = props;
     return (
         <div className="bg-neutral-900 border border-white/10 p-6 rounded-3xl">
             <div className="aspect-video">{children}</div>
