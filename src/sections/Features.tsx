@@ -28,11 +28,12 @@ export default function Features() {
                     Where power meets{" "}
                     <span className="text-lime-400">Simplicity</span>{" "}
                 </h2>
-                <div className="mt-12 grid grid-cols-1 gap-8">
+                <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-8">
                     <FeatureCard
                         title="Real-time Collaboration"
                         description="Work together seamlessly with conflict-free team
                                 editing"
+                        className="col-span-2"
                     >
                         <div className="aspect-video flex items-center justify-center">
                             <Avatar className="z-40">
@@ -72,6 +73,7 @@ export default function Features() {
                         title="Interactive Prototyping"
                         description="Engage your clients with Prototyping that react
                                 to user actions"
+                        className="col-span-2"
                     >
                         <div className="aspect-video flex items-center justify-center">
                             <p className="text-4xl font-extrabold text-white/20 text-center">
@@ -88,6 +90,7 @@ export default function Features() {
                         title="Keyboard Quick Actions"
                         description=" Powerfull commamds to help you create desings
                                 more quickly"
+                        className="col-span-2 col-start-2"
                     >
                         <div className="aspect-video flex items-center gap-4">
                             <Key className="w-28">Shift</Key>
@@ -101,12 +104,12 @@ export default function Features() {
                     {features.map((feature) => (
                         <div
                             key={feature}
-                            className="bg-neutral-900 border border-white/10 inline-flex px-3 py-1.5 rounded-2xl gap-3 items-center"
+                            className="bg-neutral-900 border border-white/10 inline-flex px-3 md:px-5 py-1.5 md:py-2 rounded-2xl gap-3 items-center"
                         >
                             <span className="bg-lime-400 text-neutral-950 size-5 rounded-full inline-flex items-center justify-center text-xl">
                                 &#10038;
                             </span>
-                            <span className="font-medium">{feature}</span>
+                            <span className="font-medium md:text-lg">{feature}</span>
                         </div>
                     ))}
                 </div>
