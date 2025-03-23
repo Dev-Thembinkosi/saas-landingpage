@@ -28,7 +28,7 @@ export default function Features() {
                     Where power meets{" "}
                     <span className="text-lime-400">Simplicity</span>{" "}
                 </h2>
-                <div className="mt-12 grid grid-cols-1 grap-8">
+                <div className="mt-12 grid grid-cols-1 gap-8">
                     <FeatureCard
                         title="Real-time Collaboration"
                         description="Work together seamlessly with conflict-free team
@@ -97,11 +97,16 @@ export default function Features() {
                     </FeatureCard>
                 </div>
 
-                <div>
+                <div className="mt-8 flex flex-wrap gap-3 justify-center">
                     {features.map((feature) => (
-                        <div key={feature}>
-                            <span></span>
-                            <span>{feature}</span>
+                        <div
+                            key={feature}
+                            className="bg-neutral-900 border border-white/10 inline-flex px-3 py-1.5 rounded-2xl gap-3 items-center"
+                        >
+                            <span className="bg-lime-400 text-neutral-950 size-5 rounded-full inline-flex items-center justify-center text-xl">
+                                &#10038;
+                            </span>
+                            <span className="font-medium">{feature}</span>
                         </div>
                     ))}
                 </div>
