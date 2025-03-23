@@ -5,6 +5,7 @@ import Avatar2 from "@/assets/images/avatar-lula-meyers.jpg";
 import Avatar3 from "@/assets/images/avatar-florence-shaw.jpg";
 import Image from "next/image";
 import Avatar from "@/components/Avatar";
+import Key from "@/components/Key";
 
 const features = [
     "Asset Library",
@@ -87,7 +88,13 @@ export default function Features() {
                         title="Keyboard Quick Actions"
                         description=" Powerfull commamds to help you create desings
                                 more quickly"
-                    ></FeatureCard>
+                    >
+                        <div className="aspect-video flex items-center gap-4">
+                            <Key className="w-28">Shift</Key>
+                            <Key>alt</Key>
+                            <Key>C</Key>
+                        </div>
+                    </FeatureCard>
                 </div>
 
                 <div>
