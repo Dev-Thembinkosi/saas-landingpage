@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <section className="py-16">
             <div className="container">
-                <div className="flex flex-col items-center gap-6">
+                <div className="flex flex-col md:flex-row  md:justify-between items-center gap-6">
                     <div>
                         <Image src={logoImage} alt="layers logo" />
                     </div>
